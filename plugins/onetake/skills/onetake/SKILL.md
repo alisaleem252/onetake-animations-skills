@@ -40,11 +40,12 @@ exists so the next film starts where those films ended.
 
 ## Running inside Claude chat (claude.ai / desktop)
 
-This folder is installed read-only (usually under `/mnt/skills/user/onetake/`). Before running anything, copy it into
-the working directory so scripts can write next to themselves, and run every command from that copy:
+This folder is installed read-only (in chat usually under `/mnt/skills/`; as a plugin, in the plugin cache). Before
+running anything, copy it into the working directory so scripts can write next to themselves, and run every command
+from that copy. `SKILL_DIR` is the folder this SKILL.md is in; if it isn't given, find it:
 
 ```bash
-SKILL_DIR="$(dirname "$(find /mnt/skills -name SKILL.md -path '*onetake*' | head -1)")"
+SKILL_DIR="$(dirname "$(find /mnt/skills ~/.claude -name SKILL.md -path '*onetake*' 2>/dev/null | head -1)")"
 cp -r "$SKILL_DIR" ./onetake && cd ./onetake
 bash scripts/check_env.sh            # reports what this sandbox can run, installs the pip packages it can
 ```

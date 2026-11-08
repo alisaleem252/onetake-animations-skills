@@ -1,0 +1,13 @@
+{
+  "name": "onetake",
+  "version": "1.0.0",
+  "description": "Make 10–30 s product launch films and narrated feature demos from one HTML composition: measured moves, shutter motion blur, synthesised sound, and an oracle that fails a slideshow.",
+  "author": {
+    "name": "Patrick",
+    "url": "https://github.com/feitangyuan"
+  },
+  "homepage": "https://github.com/feitangyuan/onetake",
+  "repository": "https://github.com/alisaleem252/onetake-animations-skills",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": ["motion", "video", "launch-video", "promo", "animation", "product-demo"]
+}

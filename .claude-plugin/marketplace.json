@@ -1,0 +1,16 @@
+{
+  "name": "onetake-animations",
+  "description": "onetake by Patrick (github.com/feitangyuan/onetake), packaged as a Claude plugin: product motion films where every beat carries into the next.",
+  "owner": {
+    "name": "Ali Saleem",
+    "url": "https://github.com/alisaleem252"
+  },
+  "plugins": [
+    {
+      "name": "onetake",
+      "source": "./plugins/onetake",
+      "description": "Make 10–30 s product launch films and narrated feature demos from one HTML composition: measured moves, shutter motion blur, synthesised sound, and an oracle that fails a slideshow.",
+      "category": "design"
+    }
+  ]
+}
